@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campers - Inicio</title>
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+<body>
+
+    <!-- Dentro del body para sus proyecto -->
+    <header class="header"> 
+            <img src="./imagenes/Logo-removebg-preview.png" alt="Logo" class="logo">
+                <nav>
+                
+                    <ol class="nav__lista">
+                        <ol class="nav__item">  
+                            <a href="./index.html">Inicio</a>
+                        </ol>
+                        <ol class="nav__item">
+                            <a href="./paginas/modelo.html" >Modelo</a>
+                        </ol>
+                        <ol class="nav__item">
+                            <a href="./paginas/galeria.html">Galeria</a>
+                        </ol>
+                        <ol class="nav__item">
+                            <a href="./paginas/contacto.html">Contacto</a>
+                        </ol>
+                        <ol class="nav__item">
+                            <a href="./paginas/faq.html">Preguntas frecuentes</a>
+                        </ol>
+                    </ol>
+                </nav>
+    </header>
+
+    <main   class="background"> 
+        <div>
+            <img class="Background__amarok" src="./imagenes/Amarok Ruta original.jpeg" alt="amarok Ruta">
+        </div>
+        <section>
+
+            <div>
+                <h2 class="quienesSomos">Quienes somos</h2>
+                    <p  class="quienesSomos__descripcion"> En Todo Camper creemos que para disfrutar de buenos viajes es fundamental sentirse como en casa, es por eso que nuestros campers estan echos hasta el mas minimo detalle, logrando asi un confort y experiencia unica de viaje </p>
+            </div>
+
+            <div class="imagen">
+                <a href="./paginas/modelo.html"><img    class="imagen__interior" src="imagenes/Interior 1 P abiertas.jpeg" alt="Interior"></a>
+
+                <a href="./paginas/modelo.html"><img    class="imagen__exterior" src="./imagenes/Amarok fabrica.jpeg" alt="Exterior"></a>
+            </div>
+            
+        </section>
+
+        <Section    class="formulario">
+            <h2 class="formulario__titulo">¿Estas listo para emprender tu viaje?</h2>
+            <form   class="formulario__datos">
+                <div>
+                    <label for="Nombre y apellido">Nombre y apellido:</label>
+                    <input type="text" id="Nombre y apellido"   name="Nombre y apellido"    placeholder="Ingrese su nombre" required>
+                </div>
+                <div>
+                    <label for="Telefono">Telefono:</label>
+                    <input type="text" id="Telefono"    name="Telefono"     placeholder="Ingrese su telefono"   required>
+                </div>
+                <div>
+                    <label for="Ubicación">Ubicación:</label>
+                    <input type="text"  id="Ubicación"    name="Ubicación"  placeholder="Localidad, provincia y pais"   required>
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email"  name="Email"    placeholder="Ingrese su mail"   required>
+                </div>
+                <div>
+                    <label for="">Comentario:
+                        <textarea name="" id="Comentario" cols="30" rows="10" placeholder="Dejanos un comentario.."></textarea> 
+                    </label>
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </Section>
+    </main>
+
+    <!-- La parte final a mostrar de esta pagina es decir el pie de pagina -->
+    <footer class="footer"> 
+        <Div>
+            <H3    class="fooMenu" >Menu</H3>
+            <nav>
+                <!-- Lista de enlaces para navegar dentro del sitio -->
+                <ol>
+                    <ol>
+                        <a class="fooMenu"href="index.html">Inicio</a>
+                    </ol>
+                    <ol>
+                        <a class="fooMenu"href="paginas/modelo.html">Modelo</a>
+                    </ol>
+                    <ol>
+                        <a class="fooMenu"href="paginas/tienda.html">Tienda</a>
+                    </ol>
+                    <ol>
+                        <a class="fooMenu"href="paginas/galeria.html">Galeria</a>
+                    </ol>
+                    <ol>
+                        <a class="fooMenu"href="Paginas/contacto.html">Contacto</a>
+                    </ol>
+                    <ol>
+                        <a class="fooMenu"href="Paginas/faq.html">Preguntas frecuentes</a>
+                    </ol>
+                </ol>
+            </nav>
+        </Div>
+        <div class="fooUbicacion">
+            <h3>Ubicación</h3>
+                <a href="paginas/contacto.html">
+                <span>Tigre,Buenos aires, Argentina</span></a>
+        </div>
+        <div class="fooContacto">
+            <h3>Contacto</h3>
+            <h4>Email:</h4>
+            <span>mail-campers@hotmail.com</span> 
+            <h4>Tel:</h4>
+            <a href="https://wa.me/+5401135953213"  target="_blank">1190903535</a>
+        </div>
+        <Div class="fooSiguenos">
+            <h3>Siguenos!</h3>
+            <a href="https://www.facebook.com/marcos.rio.372"   target="_blank">
+                <img src="./imagenes/Facebook_Logo-removebg-preview.png" width="30"></a>
+            <a href="https://www.instagram.com/marcos_rioo" target="_blank">
+                <img src="./imagenes/instagram-removebg-preview.png" width="35"></a>
+            <a href="https://wa.me/+5401135953213" target="_blank">
+                <img src="./imagenes/whatsaap-removebg-preview.png" alt="whatsaap"   width="40">
+            </a>
+        </Div>
+    </footer> 
+</body>
+</html>
