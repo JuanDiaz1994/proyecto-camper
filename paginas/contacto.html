@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Campers - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/design.css">
 </head>
 <body   class="background">
@@ -12,24 +13,23 @@
     <header class="header"> 
         <img src="../imagenes/Logo-removebg-preview.png" alt="Logo" class="logo">
             <nav>
-            
-                <ol class="nav__lista">
-                    <ol class="nav__item">
-                        <a href="../index.html">Inicio</a>
-                    </ol>
-                    <ol class="nav__item">
-                        <a href="modelo.html" >Modelo</a>
-                    </ol>
-                    <ol class="nav__item">
-                        <a href="galeria.html">Galeria</a>
-                    </ol>
-                    <ol class="nav__item">
-                        <a href="contacto.html">Contacto</a>
-                    </ol>
-                    <ol class="nav__item">
-                        <a href="faq.html">Preguntas frecuentes</a>
-                    </ol>
-                </ol>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active nav__Color" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__Color" href="modelo.html">Modelo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__Color" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav__Color" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav__Color" href="faq.html">Preguntas frecuentes</a>
+                    </li>
+                  </ul>
             </nav>
     </header>
 
@@ -37,38 +37,34 @@
     <main>
         <h2 class="TituloContactate">Contactate con nosotros</h2>
         <section    class="contacto">
-            <div>
-                <iframe class="contacto__google" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26327.99294970239!2d-58.593354779771325!3d-34.42677750330523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1656367958270!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div    class="contacto__formulario">
-                <form>
-                    <div>
-                        <label for="Nombre y apellido">Nombre y apellido:</label>
-                        <input type="text" id="Nombre y apellido"   name="Nombre y apellido"    placeholder="Ingrese su nombre" required>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Telefono de contacto</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej: 1198765432">
+                              </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <label for="Telefono">Telefono:</label>
-                        <input type="text" id="Telefono"    name="Telefono"     placeholder="Ingrese su telefono"   required>
+                    <div class="col-12 col-md-8">
+                        <iframe class="contacto__google"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26327.99294970239!2d-58.59335477977135!3d-34.42677750330523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1658777814525!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div>
-                        <label for="Ubicación">Ubicación:</label>
-                        <input type="text"  id="Ubicación"    name="Ubicación"  placeholder="Localidad, provincia y pais"   required>
-                    </div>
-                    <div>
-                        <label for="Email">Email</label>
-                        <input type="email" id="Email"  name="Email"    placeholder="Ingrese su mail"   required>
-                    </div>
-                    <div>
-                        <label for="">Comentario:
-                            <textarea name="" id="Comentario" cols="30" rows="10" placeholder="Dejanos un comentario.."></textarea> 
-                        </label>
-                    </div>
-                    <div>
-                        <button>Enviar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
+        
     </main>
 
     <!-- La parte final a mostrar de esta pagina es decir el pie de pagina -->
@@ -107,7 +103,7 @@
         <div    class="fooContacto">
             <h3>Contacto</h3>
             <h4>Email:</h4>
-            <span>mail-campers@hotmail.com</span> 
+            <span>todocamper@gmail.com</span> 
             <h4>Tel:</h4>
             <a href="https://wa.me/+5401135953213"  target="_blank">1190903535</a>
         </div>
@@ -120,7 +116,8 @@
             <a href="https://wa.me/+5401135953213"              target="_blank">
                 <img src="../imagenes/whatsaap-removebg-preview.png"      width="40"></a>
         </Div>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
