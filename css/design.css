@@ -9,7 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior:smooth;
+}
 a {
     text-decoration: none;
     color: white;
@@ -20,18 +22,19 @@ a:hover {
 
 /* Index.html */
 .background{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     padding-bottom: 20px;
 }
+
 .header{
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-size: 130%;
-    text-shadow: 2px 2px 10px black;
+    text-shadow: 2px 2px 2px black;
     border-bottom:double #003;
     text-decoration: none;
+
     
     display: flex;
     width: 100%;
@@ -42,9 +45,44 @@ a:hover {
     padding-right: 4rem;
     padding-top: 1rem;
 }
+.nav-padding{
+    padding: 0.5rem;
+}
 .nav__Color{
     text-decoration: none;
     color: white;
+}
+
+.button{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 4px 4px;
+    border: 2px solid;
+    position: relative;
+}
+.button::before,
+.button::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: inherit;
+    transition: all .3s;
+}
+.button::before{
+    top: -7px;
+    left: -7px;
+    border-width: 2px 0 0 2px;
+}
+.button::after{
+    bottom: -8px;
+    right: -8px;
+    border-width: 0 2px 2px 0;
+}
+.button:hover::before,
+.button:hover::after{
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
 }
 .logo{
     width: 120px;
@@ -59,6 +97,9 @@ a:hover {
 .container-fluid{
     padding-left:0px;
     padding-right: 0px;
+}
+.rowcorregido{
+    --bs-gutter-x: 0rem;
 }
 .Background__amarok{
    width: 100%;
@@ -103,6 +144,24 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
+.imagen-container{
+    position: relative;
+    width: 50%;
+}
+.imagen-container img{
+    width: 100%;
+    height: 100%;
+}
+.transition-image{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.transition-image:hover{
+    opacity: 1;
+}
 .grid__extras{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -118,6 +177,7 @@ a:hover {
     box-shadow: 1px 1px 10px black;
 
 }
+
 .imagen__exterior{
     width:300px;
     border-radius: 10%;
@@ -148,8 +208,9 @@ a:hover {
 .formulario__datos{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style:italic;
-    text-align: right;
+    text-align: center;
     color: white;
+    
     text-shadow: 1px 1px 10px black;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -159,53 +220,27 @@ a:hover {
     padding-top: 15px;
     border-top:double #003;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: center;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr;
 }
-.footermodelo{
-    padding-top: 15px;
-    border-top:double #003;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: center;
-    justify-items: center;
-}
-.fooMenu{
+.foospan{
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style:italic;
     text-shadow: 1px 1px 1px black;
-}
-
-.fooUbicacion{
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:italic;
-    text-shadow: 1px 1px 1px black;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
 }   
-
-.fooContacto{
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:italic;
-    text-shadow: 1px 1px 1px black;
-}
 
 .fooSiguenos{
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style:italic;
     text-shadow: 1px 1px 1px black;
-
-}
-
-.derechosReservados{
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:italic;
-    text-shadow: 1px 1px 1px black;
-
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-right: 5%;
 }
 /* Fin de Index */ 
 
@@ -300,12 +335,29 @@ a:hover {
 }
 
 .linkGaleria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.linkGaleria__vermas{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style:italic;
-    color: white;
-    font-size: 20px;
-    text-shadow: 1px 1px 10px black;
-    margin-left:  44%;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    background-color: rgb(5, 117, 80);
+    border-radius: 10px;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.linkGaleria__vermas:hover{
+    box-shadow: inset 200px 0 0 0 rgb(5, 151, 219);
+    cursor: pointer;
+    color: black;
 }
 
 .imagenesExterior__texto{ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -600,28 +652,9 @@ a:hover {
 /* fin de Galeria.html */
 
 /* inicio de FAQ.html */
-
-.FAQtitulos{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:italic;
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
-    padding-top: 50px;
-    padding-left: 80px;
-    
+.faq{
+    margin-top: 2%;
 }
-
-.FAQtexto{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:italic;
-    color: white;
-    font-size: 15px;
-    text-shadow: 2px 2px 5px black;
-    padding-top: 10px;
-    padding-left: 200px;
-}
-
 .FAQtexto2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style:italic;
