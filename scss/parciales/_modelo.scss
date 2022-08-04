@@ -1,0 +1,123 @@
+.titulos{
+    font-family:$font-family;
+    font-style:$font-style;;
+    color: $colorTexto;
+    font-size: 30px;
+    text-align: center;
+    padding: 16px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.divimagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imagen1interior{
+    width: 100%;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+.row__align{
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.imagen1interior__texto{
+    font-family:$font-family;
+    font-style:$font-style;;
+    color: $colorTexto;
+    font-size: 20px;
+    text-shadow: 5px 5px 15px black;
+
+    text-align: center;
+    margin-top: 15%;
+
+}
+
+.imagen2interior{
+    border-radius: 10%;
+    box-shadow: $box-shadow;
+}
+.imagen1exterior{
+    width: 40%;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: 80px;
+}
+.imagen2exterior{
+    width: 100%;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+.imagen2interior__texto{
+    font-family:$font-family;
+    font-style:$font-style;;
+    color: $colorTexto;
+    font-size: 20px;
+    text-shadow: 5px 5px 15px black;
+    
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.imagenesinterior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.imagenesinterior__extras{
+    border-radius: 15%;
+    box-shadow: $box-shadow;
+    max-width: 80%;
+}
+
+.linkGaleria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.linkGaleria__vermas{
+    font-family:$font-family;
+    font-style:$font-style;;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: $colorTexto;
+    background-color: rgb(5, 117, 80);
+    border-radius: $border-radius;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.linkGaleria__vermas:hover{
+    box-shadow: inset 200px 0 0 0 rgb(5, 151, 219);
+    cursor: pointer;
+    color: black;
+}
+
+.imagenesExterior__texto{ 
+    font-family:$font-family;
+    font-style:$font-style;;
+    color: $colorTexto;
+    font-size: 20px;
+    text-shadow: 5px 5px 15px black;
+    width: 100%;
+    text-align: center;
+}

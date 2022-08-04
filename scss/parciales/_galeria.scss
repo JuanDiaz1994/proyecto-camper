@@ -1,0 +1,239 @@
+.galeria{
+    font-family:$font-family;
+    font-style:$font-style;;
+    color: $colorTexto;
+    font-size: 35px;
+    text-align: center;
+    padding: 16px;
+    text-shadow: 3px 3px 15px black;
+}
+
+.galeria__texto{
+    font-family:$font-family;
+    font-style:$font-style;;
+    color: $colorTexto;
+    font-size: 15px;
+    text-align: center;
+    padding: 16px;
+    text-shadow: 3px 3px 15px black;
+}
+
+.galeria__imagenes{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(7, 1fr);
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+ 
+}
+
+.galeria__imagenes--grid1{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid2{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid3{
+    border-radius: $border-radius;
+    max-width:180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid4{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid5{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid6{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid7{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid8{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid9{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid10{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid11{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid12{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid13{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid14{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid15{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid16{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid17{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid18{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid19{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid20{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid21{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid22{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid23{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid24{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid25{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid26{
+    border-radius: 10%;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid27{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid28{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid29{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid30{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid31{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid32{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid33{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid34{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid35{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid36{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid37{
+    border-radius: $border-radius$border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid38{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid39{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid40{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+.galeria__imagenes--grid41{
+    border-radius: $border-radius;
+    max-width: 180px;
+    box-shadow: $box-shadow;
+}
+
