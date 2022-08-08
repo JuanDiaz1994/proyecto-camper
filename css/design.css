@@ -17,7 +17,7 @@ a:hover {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   padding-bottom: 20px; }
 
-.tipografia, .header, .foospan, .fooSiguenos, .tipografia-Quienessomos, .modelo__parrafo, .quienesSomos__descripcion, .formulario__datos, .titulos, .imagen1interior__texto, .imagen2interior__texto, .linkGaleria__vermas, .imagenesExterior__texto, .galeria, .galeria__texto, .TituloContactate, .contacto__formulario, .FAQtexto2 {
+.tipografia, .header, .foospan, .fooSiguenos, .tipografia-Quienessomos, .modelo__parrafo, .quienesSomos__descripcion, .formulario__titulo, .formulario__datos, .titulos, .imagen1interior__texto, .imagen2interior__texto, .linkGaleria__vermas, .imagenesExterior__texto, .galeria, .galeria__texto, .TituloContactate, .contacto__formulario, .FAQtexto2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   font-style: italic; }
