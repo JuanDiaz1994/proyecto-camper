@@ -9,7 +9,7 @@ html {
 }
 a {
     text-decoration: none;
-    color: $colorTexto;
+    color: white
 }
 a:hover {
     color: black;
@@ -17,4 +17,9 @@ a:hover {
   .background{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     padding-bottom: 20px;
+}
+.tipografia{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-style: italic;
 }

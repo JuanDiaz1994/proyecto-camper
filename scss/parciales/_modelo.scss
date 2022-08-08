@@ -1,7 +1,5 @@
 .titulos{
-    font-family:$font-family;
-    font-style:$font-style;;
-    color: $colorTexto;
+    @extend .tipografia;
     font-size: 30px;
     text-align: center;
     padding: 16px;
@@ -16,34 +14,32 @@
 
 .imagen1interior{
     width: 100%;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: map-get($estilos , border-radius );
+    box-shadow: map-get($estilos, box-shadow );
 }
 .row__align{
     align-items: center;
-    margin-top: 1rem;
+    @include margin(1rem, 0px);
 }
 
 .imagen1interior__texto{
-    font-family:$font-family;
-    font-style:$font-style;;
-    color: $colorTexto;
-    font-size: 20px;
+    @extend .tipografia; /* esta en general.scss */
+    font-size: map-get($estilos , fontsize-20 );
     text-shadow: 5px 5px 15px black;
 
     text-align: center;
-    margin-top: 15%;
+    @include margin(15%, 0px);
 
 }
 
 .imagen2interior{
-    border-radius: 10%;
-    box-shadow: $box-shadow;
+    border-radius: map-get($estilos , border-radius );
+    box-shadow: map-get($estilos, box-shadow );
 }
 .imagen1exterior{
     width: 40%;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: map-get($estilos , border-radius );
+    box-shadow: map-get($estilos, box-shadow );
 
     display: flex;
     flex-direction: row;
@@ -53,13 +49,11 @@
 }
 .imagen2exterior{
     width: 100%;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: map-get($estilos , border-radius );
+    box-shadow: map-get($estilos, box-shadow );
 }
 .imagen2interior__texto{
-    font-family:$font-family;
-    font-style:$font-style;;
-    color: $colorTexto;
+    @extend .tipografia; /* esta en general.scss */
     font-size: 20px;
     text-shadow: 5px 5px 15px black;
     
@@ -69,8 +63,8 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
-    margin-top: 100px;
-    margin-right: 50px;
+    @include margin(100, 50px);
+
 }
 
 .imagenesinterior{
@@ -82,7 +76,7 @@
 
 .imagenesinterior__extras{
     border-radius: 15%;
-    box-shadow: $box-shadow;
+    box-shadow: map-get($estilos, box-shadow );
     max-width: 80%;
 }
 
@@ -90,18 +84,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.5rem;
+    @include margin(20px, 0px);
 }
 .linkGaleria__vermas{
-    font-family:$font-family;
-    font-style:$font-style;;
+    @extend .tipografia; /* esta en general.scss */
     font-size: 18px;
-    width: 200px;
-    height: 30px;
+    width: 180px;
+    height: 25px;
     border: none;
-    color: $colorTexto;
+
     background-color: rgb(5, 117, 80);
-    border-radius: $border-radius;
+    border-radius: $border-radiusvermas;
     transition: ease-out 0.3s;
     outline: none;
 }
@@ -110,12 +103,11 @@
     box-shadow: inset 200px 0 0 0 rgb(5, 151, 219);
     cursor: pointer;
     color: black;
+    
 }
 
 .imagenesExterior__texto{ 
-    font-family:$font-family;
-    font-style:$font-style;;
-    color: $colorTexto;
+    @extend .tipografia; /* esta en general.scss */
     font-size: 20px;
     text-shadow: 5px 5px 15px black;
     width: 100%;

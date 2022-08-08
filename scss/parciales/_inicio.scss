@@ -15,21 +15,17 @@
 .Background__amarok{
    width: 100%;
 }
-
-.quienesSomos{
-    font-family: $font-family;
-    font-style:$font-style;;
-    color: $colorTexto;
+.tipografia-Quienessomos{
+    @extend .tipografia; /* esta en general.css */
     font-size: 50px;
     text-align: center;
     margin: auto;
     padding: 16px;
     text-shadow: 1px 1px 10px black;
+    
 }
 .modelo__parrafo{
-    font-family: $font-family;
-    font-style:$font-style;
-    color: $colorTexto;
+    @extend .tipografia;
     font-size: 22px;
     text-align: center;
     margin: auto;
@@ -39,9 +35,7 @@
 }
 
 .quienesSomos__descripcion{
-    font-family: $font-family;
-    font-style: $font-style;
-    color: $colorTexto;
+    @extend .tipografia; /* esta en general.css */
     font-size: 22px;
     text-align: center;
     margin: auto;
@@ -84,15 +78,15 @@
 
 .imagen__interior{
     width:300px;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: map-get($estilos , border-radius );
+    box-shadow: map-get($estilos , box-shadow );
 
 }
 
 .imagen__exterior{
     width:300px;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    border-radius: map-get($estilos , border-radius );
+    box-shadow: map-get($estilos , box-shadow );
 }
 
 .formulario{
@@ -110,17 +104,13 @@
     margin-right: 20px;
 }
 .formulario__titulo{
-    font-family: $font-family;
-    font-style:$font-style;
-    color: $colorTexto;
+    
     text-shadow: 1px 1px 10px black;
     font-size: 35px;
 }
 .formulario__datos{
-    font-family: $font-family;
-    font-style:$font-style;
+    @extend .tipografia;
     text-align: center;
-    color: $colorTexto;
     
     text-shadow: 1px 1px 10px black;
     margin-bottom: 5%;

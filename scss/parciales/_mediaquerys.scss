@@ -39,13 +39,12 @@
 
     .imagen__interior{
         width:250px;
-        border-radius: $border-radius;
+        border-radius: map-get($estilos,border-radius);
         box-shadow: 1px 1px 10px black;
-    
     }
     .imagen__exterior{
         width:250px;
-        border-radius: $border-radius;
+        border-radius: map-get($estilos,border-radius);
         box-shadow: 1px 1px 10px black;
         
     }
@@ -74,18 +73,16 @@
     
     .imagen__interior{
         width:300px;
-        border-radius: $border-radius;
+        border-radius: map-get($estilos,border-radius);
         box-shadow: 1px 1px 10px black;
         margin-bottom: 25px;
     }
     .imagen__exterior{
         width:300px;
-        border-radius: $border-radius;
+        border-radius: map-get($estilos,border-radius);
         box-shadow: 1px 1px 10px black;
     }
     .header{
-        font-family:$font-family;
-        font-style: $font-style;;
         font-size: 130%;
         text-shadow: 2px 2px 10px black;
         border-bottom:double #003; ;
@@ -294,9 +291,6 @@
         margin-top: 30px;
     }
     .modelo__parrafo{
-        font-family:$font-family;
-        font-style:$font-style;;
-        color: $colorTexto;
         font-size: 22px;
         text-align: center;
         margin: auto;

@@ -2,9 +2,7 @@
     margin-top: 2%;
 }
 .FAQtexto2{
-    font-family:$font-family;
-    font-style:$font-style;;
-    color: $colorTexto;
+    @extend .tipografia; /* esta en general.scss */
     font-size: 15px;
     text-shadow: 2px 2px 5px black;
     padding-top: 15px;

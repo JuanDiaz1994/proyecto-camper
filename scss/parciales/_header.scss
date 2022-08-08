@@ -1,7 +1,6 @@
 .header{
 
-    font-family:$font-family;
-    font-style: $font-style;;
+    @extend .tipografia;
     font-size: 130%;
     text-shadow: 2px 2px 2px black;
     border-bottom:double #003;

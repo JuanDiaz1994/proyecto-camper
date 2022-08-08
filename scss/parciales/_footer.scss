@@ -5,9 +5,7 @@
     grid-template-columns: 1fr 1fr;
 }
 .foospan{
-    color: $colorTexto;
-    font-family:$font-family;
-    font-style:$font-style;;
+    @extend .tipografia;
     text-shadow: 1px 1px 1px black;
     display: flex;
     align-items: flex-end;
@@ -15,9 +13,7 @@
 }   
 
 .fooSiguenos{
-    color: $colorTexto;
-    font-family:$font-family;
-    font-style:$font-style;;
+   @extend .tipografia;
     text-shadow: 1px 1px 1px black;
     display: flex;
     justify-content: end;
