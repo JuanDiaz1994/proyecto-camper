@@ -1,7 +1,7 @@
 .header{
 
     @extend .tipografia;
-    font-size: 130%;
+    font-size: 110%;
     text-shadow: 2px 2px 2px black;
     border-bottom:double #003;
     text-decoration: none;
@@ -13,11 +13,11 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
-    padding-right: 4rem;
+    padding-right: 2rem;
     padding-top: 1rem;
 }
 .nav-padding{
-    padding: 0.5rem;
+    padding: 1rem;
 }
 .nav__Color{
     text-decoration: none;
@@ -27,7 +27,7 @@
     text-decoration: none;
     color: $colorTexto;
     padding: 4px 4px;
-    border: 2px solid;
+    border: 2px solid cornflowerblue;
     position: relative;
 }
 .button::before,
@@ -38,21 +38,28 @@
     height: 20px;
     border: inherit;
     transition: all .3s;
+    color: white;
+
 }
 .button::before{
     top: -7px;
     left: -7px;
     border-width: 2px 0 0 2px;
+    text-decoration: none;
+    color: white;
 }
 .button::after{
     bottom: -8px;
     right: -8px;
     border-width: 0 2px 2px 0;
+    text-decoration: none;
+
 }
 .button:hover::before,
 .button:hover::after{
     width: calc(100% + 14px);
     height: calc(100% + 14px);
+
 }
 .logo{
     width: 120px;
