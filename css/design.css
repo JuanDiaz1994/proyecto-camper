@@ -24,8 +24,7 @@ a:hover {
 
 .header {
   font-size: 110%;
-  text-shadow: 2px 2px 2px black;
-  border-bottom: double #003;
+  border-bottom:solid black ;
   text-decoration: none;
   display: flex;
   width: 100%;
@@ -670,7 +669,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'menu contacto' 'ubicacion siguenos';
+    grid-template-areas: 'menu contacto'
+ 'ubicacion siguenos';
     align-items: center;
     padding: 15px; }
   .fooMenu {
@@ -693,7 +693,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'menu contacto' 'ubicacion siguenos';
+    grid-template-areas: 'menu contacto'
+ 'ubicacion siguenos';
     align-items: center;
     padding: 15px; }
   .fooMenu {
@@ -804,7 +805,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'menu contacto' 'ubicacion siguenos';
+    grid-template-areas: 'menu contacto'
+ 'ubicacion siguenos';
     align-items: center;
     text-align: center;
     padding: 15px; }
@@ -841,7 +843,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'menu contacto' 'ubicacion siguenos';
+    grid-template-areas: 'menu contacto'
+ 'ubicacion siguenos';
     align-items: center;
     text-align: center;
     padding: 15px; }
