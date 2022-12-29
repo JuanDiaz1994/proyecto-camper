@@ -1,0 +1,62 @@
+@use 'variables' as v;
+
+.carrito-desplegable{
+    display: none;
+    width: 360px;
+    height: 260px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px;
+    position: absolute;
+    top: 220px;
+    right: 100px;
+    background-color: rgb(92, 92, 92);
+    border: 1px solid black;
+    &__Titulo{
+        font-weight: 700;
+        border-bottom: 1px solid grey;
+        color: white;
+        padding: 24px;
+        text-shadow: 1px 1px 10px black;
+    }
+    &__botonComprar-container{
+        padding: 24px;
+    }
+    &__detalles-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    &__imagen{
+        width: 80px;
+        border-radius: 4px;
+    }
+    &__producto{
+        font-weight: 500;
+        color: black;
+        text-shadow: 1px 1px 10px white;
+    }
+    &__precio{
+        font-weight: 700;
+        color: black;
+        text-shadow: 1px 1px 10px white;
+    }
+    &__borrar{
+        cursor: pointer;
+    }
+    &__comprar{
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+        border: none;
+        font-size: 0.9em;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.5; //se vuelva mas claro cuando pase el click por encima
+        }
+        }
+}

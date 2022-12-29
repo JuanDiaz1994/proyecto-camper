@@ -9,3 +9,18 @@
 @import "./parciales/_contacto.scss";
 @import "./parciales/_faq.scss";
 @import "./parciales/_mediaquerys.scss";
+@import "./parciales/_carrito-desplegable";
+
+.mostrar{
+    display: block;
+}
+
+.carrito-vacio{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.noShow{
+    display: none;
+}

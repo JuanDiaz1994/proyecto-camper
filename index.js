@@ -1,5 +1,46 @@
-alert("Bienvenido/a!")
+//Mostrar carrito de compras desplegable
+const carritoIcono = document.querySelector('.carrito__icono');
+const carritoDesplegado = document.querySelector('.carrito-desplegable');
 
+carritoIcono.addEventListener('click', ()=>{
+    carritoDesplegado.classList.toggle('mostrar');
+})
+
+const productos = [
+    { id: 1, URL:"../imagenes/Remera.png", nombre: "Let's Roll!", precio: 1000 },
+    { id: 2, URL:"../imagenes/Gorra.png",nombre: "Gorra Patagonia", precio: 700 },
+    { id: 3, URL:"../imagenes/Termo.png",nombre: "Termo Stanley", precio: 2000 },
+    { id: 4, URL:"../imagenes/Camisa.png",nombre: "Camisa Leñador", precio: 1500 },
+  ];
+  
+  productos.forEach((item) => {
+    let section = document.createElement("section");
+    section.innerHTML = `
+    <div class="tienda">
+      <h2 class = "noShow">ID: ${item.id}</h2>
+      <img class="tienda__remera1"src=" ${item.URL}"> 
+      <p class="tienda__remeraTitulo">${item.nombre}</p>
+      <b class="tienda__precio">$${item.precio}</b>
+      <button class="tienda__agregar" id="boton${item.id}">Agregar</button>
+    </div>
+    `;
+  
+    document.body.append(section);
+    let boton = document.getElementById(`boton${item.id}`);
+  
+    const ejecutar = (id) => {
+      console.log(id);
+    };
+    boton.addEventListener("click", () => ejecutar(item.id));
+  });
+
+
+
+
+
+
+
+/*
 function Producto(nombre, precio, stock){
     this.nombre = nombre;
     this.precio = precio;
@@ -13,11 +54,10 @@ function Producto(nombre, precio, stock){
     }
 }
 
-let remera = new Producto ("Remera", 1500, 5)
+let remera = new Producto ("Remera", 1000, 5)
 let gorra = new Producto ("Gorra", 800, 10)
 let Gafas = new Producto ("Gafas", 600, 20)
 
-alert("estos son nuestros productos: Remeras, Gorras y Gafas")
 
 let precioTotal = 0
 function calculoPrecio(cantidad, precio){
@@ -33,7 +73,7 @@ function calculoStock(cantidad,stock, precio){
 }
 let unidad = prompt("seleccione cual de los 3 productos desea comprar");
 
-while (unidad == "remera","gorra","gafas"){
+while (unidad == "remeras","gorras","gafas"){
 
     if (unidad == "remera"){
         let cantidadProducto_Remera = prompt("ingrese que cantidad de " + remera.nombre + " desea comprar: ")
@@ -55,9 +95,10 @@ while (unidad == "remera","gorra","gafas"){
     }
     else{
         alert("no tenemos ese producto en stock")
+    break
         }
     }   
 if (precioTotal != 0){
     alert("el precio total es: " + precioTotal)
 }
-
+*/

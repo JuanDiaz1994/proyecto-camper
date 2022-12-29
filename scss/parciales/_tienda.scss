@@ -1,7 +1,63 @@
-.titulos{
+@use 'variables' as v;
+
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+    &__icono{
+        width: 40px;
+        &:hover{
+            cursor: pointer;  
+        }
+    }
+}
+
+.carrito__titulos{
     @extend .tipografia;
     font-size: 30px;
     text-align: center;
-    padding: 16px;
     text-shadow: 1px 1px 10px black;
+}
+
+.tienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    &__remera1{
+        max-width: 40%;
+    }
+    &__remeraTitulo{
+        @extend .tipografia;
+        margin-bottom: 5px;
+        font-size:25px;
+    }
+    &__precio{
+        @extend .tipografia;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        width: 100px;
+        text-align: center;
+        background-color: black
+    }
+    &__agregar{
+        @extend .tipografia;
+        max-width: 30%;
+        font-size: 18px;
+        width: 180px;
+        height: 25px;
+        border: none;
+        background-color: rgb(5, 117, 80);
+        border-radius: 20px;
+        transition: ease-out 0.3s;
+        outline: none;
+        margin-bottom: 20px;
+        &:hover{
+            box-shadow: inset 200px 0 0 0 rgb(5, 151, 219);
+            cursor: pointer;
+            color: black;
+        }
+    }
 }
