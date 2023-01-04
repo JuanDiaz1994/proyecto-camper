@@ -2,10 +2,9 @@
 
     @extend .tipografia;
     font-size: 110%;
-    border-bottom:double #003;
     text-decoration: none;
-
-    
+    color: $colorTexto;
+    text-decoration: none;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -21,6 +20,12 @@
 .nav__Color{
     text-decoration: none;
     color: $colorTexto;
+}
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler {
+    border: 2px solid black;
 }
 .button{
     text-decoration: none;

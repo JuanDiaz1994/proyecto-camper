@@ -9,14 +9,22 @@ html {
 }
 a {
     text-decoration: none;
-    color: white
+    color: white;
+    text-decoration-color: none;
 }
 a:hover {
     color: white;
+    text-decoration: none;
   }
-  .background{
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    padding-bottom: 20px;
+
+.background__image{
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    filter: brightness(0.85);
 }
 .tipografia{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

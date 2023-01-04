@@ -11,15 +11,22 @@ html {
 a {
   text-decoration: none;
   color: white;
+  text-decoration-color: none;
 }
 
 a:hover {
   color: white;
+  text-decoration: none;
 }
 
-.background {
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-  padding-bottom: 20px;
+.background__image {
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  filter: brightness(0.85);
 }
 
 .tipografia, .FAQtexto2, .contacto__formulario, .TituloContactate, .tienda__agregar, .tienda__precio, .tienda__remeraTitulo, .carrito__titulos, .galeria__texto, .galeria, .imagenesExterior__texto, .linkGaleria__vermas, .imagen2interior__texto, .imagen1interior__texto, .titulos, .formulario__datos, .formulario__titulo, .quienesSomos__descripcion, .modelo__parrafo, .tipografia-Quienessomos, .fooSiguenos, .foospan, .header {
@@ -30,7 +37,8 @@ a:hover {
 
 .header {
   font-size: 110%;
-  border-bottom: double #003;
+  text-decoration: none;
+  color: white;
   text-decoration: none;
   display: flex;
   width: 100%;
@@ -49,6 +57,14 @@ a:hover {
 .nav__Color {
   text-decoration: none;
   color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+  border: 2px solid black;
 }
 
 .button {
@@ -228,6 +244,7 @@ a:hover {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .formulario__titulo {
@@ -240,6 +257,10 @@ a:hover {
   text-shadow: 1px 1px 10px black;
   margin-bottom: 5%;
   margin-top: 5%;
+}
+
+.formulario__button {
+  margin-bottom: 20px;
 }
 
 .titulos {
