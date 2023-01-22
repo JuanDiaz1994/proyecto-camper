@@ -28,15 +28,10 @@ const productos = [
     document.body.append(section);
     let boton = document.getElementById(`boton${item.id}`);
   
-    const ejecutar = (id) => {
-      console.log(id);
-    };
-    boton.addEventListener("click", () => ejecutar(item.id));
+    boton.addEventListener("click", () => console.log(item));
   });
 
-
-
-
+  
 
 
 
