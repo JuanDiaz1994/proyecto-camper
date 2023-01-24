@@ -5,10 +5,15 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 100px;
+    margin-bottom: 20px;
     &__icono{
         width: 40px;
         &:hover{
             cursor: pointer;  
+        }
+        &:active{
+            position: relative;
+            top: 5px;
         }
     }
 }
@@ -26,8 +31,9 @@
     justify-content: center;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
     &__remera1{
-        max-width: 40%;
+        max-width: 35%;
     }
     &__remeraTitulo{
         @extend .tipografia;
@@ -58,6 +64,10 @@
             box-shadow: inset 200px 0 0 0 rgb(5, 151, 219);
             cursor: pointer;
             color: black;
+        }
+        &:active{
+            position: relative;
+            top: 5px;
         }
     }
 }

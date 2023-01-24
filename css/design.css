@@ -656,12 +656,17 @@ a:hover {
   align-items: center;
   justify-content: flex-end;
   padding-right: 100px;
+  margin-bottom: 20px;
 }
 .carrito__icono {
   width: 40px;
 }
 .carrito__icono:hover {
   cursor: pointer;
+}
+.carrito__icono:active {
+  position: relative;
+  top: 5px;
 }
 
 .carrito__titulos {
@@ -676,9 +681,10 @@ a:hover {
   justify-content: center;
   justify-content: space-around;
   align-items: center;
+  margin-top: 20px;
 }
 .tienda__remera1 {
-  max-width: 40%;
+  max-width: 35%;
 }
 .tienda__remeraTitulo {
   margin-bottom: 5px;
@@ -707,6 +713,10 @@ a:hover {
   box-shadow: inset 200px 0 0 0 rgb(5, 151, 219);
   cursor: pointer;
   color: black;
+}
+.tienda__agregar:active {
+  position: relative;
+  top: 5px;
 }
 
 .TituloContactate {
@@ -1113,8 +1123,6 @@ a:hover {
 }
 .carrito-desplegable {
   display: none;
-  width: 360px;
-  height: 260px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px;
   position: absolute;
@@ -1122,13 +1130,34 @@ a:hover {
   right: 100px;
   background-color: rgb(92, 92, 92);
   border: 1px solid black;
+  width: 60%;
+}
+.carrito-desplegable__tituloDelete-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .carrito-desplegable__Titulo {
+  display: contents;
   font-weight: 700;
   border-bottom: 1px solid grey;
   color: white;
-  padding: 24px;
   text-shadow: 1px 1px 10px black;
+  font-size: 20px;
+  text-align: center;
+}
+.carrito-desplegable__delete {
+  width: 20px;
+  margin-right: 20px;
+}
+.carrito-desplegable__delete:hover {
+  cursor: pointer;
+}
+.carrito-desplegable__delete:active {
+  position: relative;
+  top: 5px;
 }
 .carrito-desplegable__botonComprar-container {
   padding: 24px;
@@ -1137,11 +1166,16 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  height: 150px;
+  background-color: rgb(92, 92, 92);
+  width: 80%;
+  height: 100%;
+  margin-top: 50px;
 }
 .carrito-desplegable__imagen {
-  width: 80px;
+  width: 20%;
   border-radius: 4px;
+  height: auto;
 }
 .carrito-desplegable__producto {
   font-weight: 500;
@@ -1170,6 +1204,10 @@ a:hover {
 .carrito-desplegable__comprar:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+.carrito-desplegable__comprar:active {
+  position: relative;
+  top: 5px;
 }
 
 .mostrar {
