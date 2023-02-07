@@ -13,14 +13,17 @@ const productos = [
     { id: 4, URL:"../imagenes/Camisa.png",nombre: "Camisa Leñador", precio: 1500 },
   ];
   
+/*var jsonProductos = JSON.stringify(productos)
+console.log(jsonProductos)*/
+
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
-const carrito = [];
 
 const agregarAlCarrito = (id) => {
   const producto = productos.find((item) => item.id === id);
   carrito.push(producto);
-  const carritoDesplegable = document.querySelector(".carrito-desplegable");
+  saveLocal()
   const divProducto = document.createElement("div");
   divProducto.classList.add("carrito-desplegable__detalles-container");
   divProducto.innerHTML = `
@@ -47,18 +50,21 @@ productos.forEach((item) => {
     let boton = document.getElementById(`boton${item.id}`);
     boton.addEventListener("click", () => agregarAlCarrito(item.id));
 
+
 });
+    const saveLocal = () => {
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+    };
 
-const eliminarTodoDelCarrito = () => {
-    const carritodesplegable__lista = document.querySelector(".carrito-desplegable__lista");
-    carritodesplegable__lista.innerHTML = ""
-    carrito.length = 0;
-  }
+    const eliminarTodoDelCarrito = () => {
+        const carritodesplegable__lista = document.querySelector(".carrito-desplegable__lista");
+        carritodesplegable__lista.innerHTML = ""
+        carrito.length = 0;
+    }
 
-  
-  const deleteAllButton = document.getElementById("deleteAll");
-  deleteAllButton.addEventListener("click", eliminarTodoDelCarrito);
-  
+    
+    const deleteAllButton = document.getElementById("deleteAll");
+    deleteAllButton.addEventListener("click", eliminarTodoDelCarrito);
 
 
 

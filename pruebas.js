@@ -415,7 +415,7 @@ console.log(divs[2].innerHTML); // muestra el codigo dentro del div parte2, como
 let saludo = document.getElementById("saludo"); //selecciono la ID saludo del html
 saludo.innerHTML = "tu vieja"  // modificar el texto del HTML desde JS
 
-*/
+
 let saludo = document.getElementById("saludo");
 let seccion =prompt("ingrese la seccion a visitar");
 
@@ -426,4 +426,4 @@ else if(seccion === "favoritos"){
     saludo.innerHTML = "bienvenido a los favoritos";
 }
 else
-    saludo.innerHTML = "bienvenido a nuestra pagina"
+    saludo.innerHTML = "bienvenido a nuestra pagina"*/
