@@ -1,0 +1,25 @@
+[
+    {   "id": 1,
+        "URL":"../imagenes/Remera.png",
+        "nombre": "Let's Roll!",
+        "precio": 1000 
+    },
+
+    {   "id": 2,
+        "URL":"../imagenes/Gorra.png",
+        "nombre": "Gorra Patagonia",
+        "precio": 700
+    },
+
+    {   "id": 3,
+        "URL":"../imagenes/Termo.png",
+        "nombre": "Termo Stanley",
+        "precio": 2000
+    },
+
+    {   "id": 4,
+        "URL":"../imagenes/Camisa.png",
+        "nombre": "Camisa Leñador",
+        "precio": 1500
+    }
+]
